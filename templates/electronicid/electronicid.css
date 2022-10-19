@@ -1,0 +1,138 @@
+/*
+ * =====================================
+ * 1. Common styles for general table things.
+ * =====================================
+ */
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+tr {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.rbcc {
+  /*
+   * rbcc -> reset - border - cellspacing - cellpading
+   *
+   * Resets table attributes.
+   */
+  border: 0;
+  cellpadding: 0;
+  cellspacing: 0;
+}
+
+.background {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 15px;
+}
+
+.sp {
+  /* Separator tr; props are actually contained by it's inner element atm. */
+}
+
+.sp__inner {
+  padding: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0fade1;
+}
+
+/*
+ * =================
+ * 2. Content styles.
+ * ==================
+ */
+.headline {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.copy {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.row-spacer {
+  margin-bottom: 10px;
+}
+
+.row-spacer-large {
+  margin-bottom: 20px;
+}
+
+/*
+ * ================
+ * 3. Footer styles.
+ * ================
+ */
+.footer {
+  color: #000;
+}
+
+.footer a {
+  color: #000;
+}
+
+.footer--simple {
+  padding-bottom: 20px;
+}
+
+.footer__main {
+  /* NB: This prop fucks up the width on OS X, needs to be *JUST* attribute. */
+  width: 100%;
+}
+
+.footer__main__signature {
+  font-size: 12px;
+  color: #000;
+  /* @todo gulp-inline-css doesn't parse align; it needs to be duplicated in the HTML template */
+  align: left;
+}
+
+.footer__main__col__td {
+  font-size: 12px;
+  color: #000;
+  /* @todo gulp-inline-css doesn't parse align; it needs to be duplicated in the HTML template */
+  align: left;
+}
+
+.footer__main__col__td__img {
+  border: 0;
+  padding: 30px 0px 30px 0px;
+  max-width: 100%;
+  max-height: 100px;
+  height: auto;
+}
+
+.footer__main__col__td__icon {
+  border: 0;
+  max-width: 100%;
+  max-height: 30px;
+  height: auto;
+}
+
+.footer__main a > span {
+  /* Revert apple blue-link style. */
+  color: #000 !important;
+  text-decoration: none !important;
+}
