@@ -1,0 +1,98 @@
+/*
+ * =====================================
+ * 1. Common styles for general table things.
+ * =====================================
+ */
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+tr {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  box-sizing: border-box;
+  font-size: 9px;
+
+}
+
+.rbcc {
+  /*
+   * rbcc -> reset - border - cellspacing - cellpading
+   *
+   * Resets table attributes.
+   */
+  border: 0;
+  cellpadding: 0;
+  cellspacing: 0;
+}
+
+.background {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 15px;
+  line-height: 1.4;
+}
+
+.sp__inner {
+  padding: 15px 0;
+}
+
+/*
+ * ================
+ * 2. Footer styles.
+ * ================
+ */
+.footer {
+  color: #000;
+}
+
+.footer a {
+  text-decoration: none!important;
+  color: #000;
+}
+
+a:hover {
+  color: #fa4040;
+}
+
+.footer__main {
+  /* NB: This prop fucks up the width on OS X, needs to be *JUST* attribute. */
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.logo {
+  width: 86px;
+  margin-bottom: 25px;
+}
+
+.column {
+  padding-bottom: 16px;
+}
+
+.sender {
+  font-size: 16px;
+}
+
+.disclaimer {
+  font-size: 9px;
+  color: #808080;
+  line-height: 1.22;
+}
+
+.icon {
+  width: 22px;
+  margin-right: 15px;
+}
